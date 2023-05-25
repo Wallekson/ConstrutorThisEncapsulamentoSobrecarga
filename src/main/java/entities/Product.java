@@ -1,7 +1,8 @@
 package entities;
 
 public class Product {
-    private String name; // por convenção os atributos dos Objetos devem ser declarados como private
+    String name; // por convenção os atributos dos Objetos devem ser declarados como private
+                         // se não colocarmos nada ele sera apenas reconhecido em classes que estão no mesmo pacote
     private double price;
     private int quantity;
 
@@ -13,6 +14,7 @@ public class Product {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+
     }
 
     public Product(String name, double price){ // Sobrecarga - dessa forma quantity inicia com 0
